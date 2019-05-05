@@ -8,10 +8,16 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+<<<<<<< HEAD
     def create
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "ユーザーの新規作成に成功しました。"
+=======
+ def create
+    @user = User.new(user_params)
+    if @user.save
+>>>>>>> user-signup
       redirect_to @user
     else
       render 'new'

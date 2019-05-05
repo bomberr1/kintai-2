@@ -87,8 +87,11 @@ p {
   @include box_sizing;
 }
 
+<<<<<<< HEAD
 /* table */
 
+=======
+>>>>>>> user-signup
 table {
   width: 100%;
   vertical-align: middle;
@@ -108,6 +111,10 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
   @include box_sizing;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> user-signup
 #error_explanation {
   color: red;
   ul {
