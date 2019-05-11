@@ -1,30 +1,26 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user,   only: [:edit, :update]
+  before_action :admin_user,     only: [:destroy, :edit_basic_info, :update_basic_info]
 
    def index
     @users = User.paginate(page: params[:page])
   end
 
-def show
-  @user = User.find(params[:id])
-  if params[:first_day].nil?
-    @first_day = Date.today.beginning_of_month
-  else
-    @first_day = Date.parse(params[:first_day])
-  end
-  @last_day = @first_day.end_of_month
-  (@first_day..@last_day).each do |day|
-    unless @user.attendances.any? {|attendance| attendance.worked_on == day}
-      record = @user.attendances.build(worked_on: day)
-      record.save
+  def show
+    @user = User.find(params[:id])
+    @first_day = first_day(params[:first_day])
+    @last_day = @first_day.end_of_month
+    (@first_day..@last_day).each do |day|
+      unless @user.attendances.any? {|attendance| attendance.worked_on == day}
+        record = @user.attendances.build(worked_on: day)
+        record.save
+      end
     end
+    @dates = user_attendances_month_date
+    @worked_sum = @dates.where.not(started_at: nil).count
   end
-    @dates = @user.attendances.where('worked_on >= ? and worked_on <= ?', @first_day, @last_day).order('worked_on')
- @worked_sum = @dates.where.not(started_at: nil).count
-end
 
-  
 
   def new
     @user = User.new
