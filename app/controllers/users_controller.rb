@@ -40,6 +40,12 @@ class UsersController < ApplicationController
   def edit
   end
 
+ def destroy
+    User.find(params[:id]).destroy
+    flash[:success] = "削除しました。"
+    redirect_to users_url
+  end
+
   def update
     if @user.update_attributes(user_params)
       flash[:success] = "ユーザー情報を更新しました。"
