@@ -7,6 +7,11 @@ class UsersController < ApplicationController
     @users = User.paginate(page: params[:page])
   end
 
+ def search
+    #Viewのformで取得したパラメータをモデルに渡す
+    @posts = Post.search(params[:search])
+  end
+
   def show
     @user = User.find(params[:id])
     @first_day = first_day(params[:first_day])
@@ -20,6 +25,7 @@ class UsersController < ApplicationController
     @dates = user_attendances_month_date
     @worked_sum = @dates.where.not(started_at: nil).count
   end
+
 
 
   def new

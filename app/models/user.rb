@@ -10,3 +10,7 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   validates :department, length: { in: 3..50 }, allow_blank: true
 end
+ def self.search(search)
+      return Post.all unless search
+      Post.where(['content LIKE ?', "%#{search}%"])
+    end
