@@ -36,8 +36,6 @@ def update
       redirect_to edit_attendances_path(@user, params[:date])
     end
   end
-  
-
  private
     def attendances_params
       params.permit(attendances: [:started_at, :finished_at, :note])[:attendances]

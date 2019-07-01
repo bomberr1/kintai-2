@@ -9,8 +9,10 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   validates :department, length: { in: 3..50 }, allow_blank: true
+
+scope :get_by_name, ->(name) {
+where("name like ?", "%#{name}%")
+}
+
 end
- def self.search(search)
-      return Post.all unless search
-      Post.where(['content LIKE ?', "%#{search}%"])
-    end
+ 

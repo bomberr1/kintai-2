@@ -4,7 +4,15 @@
 <% provide(:title, '一覧') %>
 <h1>ユーザ一覧</h1>
 
+<div class="container pull-right">
+<ul class="nav navbar-nav navbar-right"> 
+<%= form_tag(users_path, method: "get") do %>
+<%= label_tag :name, "ユーザー名検索" %><%= text_field_tag :name, params[:name] %>
+<%= submit_tag "検索", class: "btn btn-lg btn-primary" %>
+<% end %>
+</div>
 <%= will_paginate %>
+
 
 
 <ul class="users">

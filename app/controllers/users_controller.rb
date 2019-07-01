@@ -3,14 +3,15 @@ class UsersController < ApplicationController
   before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user,     only: [:destroy, :edit_basic_info, :update_basic_info]
 
-   def index
-    @users = User.paginate(page: params[:page])
-  end
 
- def search
-    #Viewのformで取得したパラメータをモデルに渡す
-    @posts = Post.search(params[:search])
-  end
+ def index
+    @users = User.paginate(page: params[:page])
+    if params[:name].present? 
+   end
+   @users = @users.get_by_name params[:name]
+   end
+
+
 
   def show
     @user = User.find(params[:id])
@@ -103,4 +104,4 @@ private
     def admin_user
       redirect_to(root_url) unless current_user.admin?
     end
-  end
+end
