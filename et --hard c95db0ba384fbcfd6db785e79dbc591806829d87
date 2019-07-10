@@ -1,0 +1,120 @@
+[33mcommit c95db0ba384fbcfd6db785e79dbc591806829d87[m[33m ([m[1;36mHEAD -> [m[1;32mtime-page[m[33m, [m[1;31morigin/master[m[33m, [m[1;31mheroku/rogin-form[m[33m, [m[1;31mheroku/master[m[33m, [m[1;32mrogin-form[m[33m, [m[1;32mmaster[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Mon Jul 1 22:42:07 2019 +0000
+
+    rogin-form
+
+[33mcommit 93e79c055fcb5f440d1cc385026bed98c1f5e1c1[m[33m ([m[1;32mrogin-hensyu[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Tue Jun 18 15:04:40 2019 +0000
+
+    rogin hensyu
+
+[33mcommit f5efa7d733d49232b301998c1ee9d933a5fba3f1[m[33m ([m[1;32mjapanization-and-time-format[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Thu Jun 6 03:52:12 2019 +0000
+
+    Finish japanization-and-time-format
+
+[33mcommit 2a7f34dac89eab0be7410720759783d7138bf068[m[33m ([m[1;32mattendances-edit-page[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Sat May 11 08:16:25 2019 +0000
+
+    Finish Attendances edit page
+
+[33mcommit 9ed5c639b9f7a8a951ccbce69e56bcdf55802fce[m[33m ([m[1;32muser-attendances-show-page[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Thu May 9 03:58:07 2019 +0000
+
+    Finish Attendances Show Page
+
+[33mcommit 305d12f5cba58f600e2db49896c20c29257798ed[m[33m ([m[1;32mbasic-information[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Tue May 7 02:09:10 2019 +0000
+
+    Finish basic information
+
+[33mcommit 06a0f39b3ed0df78a6bd655822359a47e0c5f4ef[m[33m ([m[1;32mediting-users[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Sun May 5 15:44:23 2019 +0000
+
+    Finish user edit index destroy
+
+[33mcommit 80d46b9986c8272a1d1775f5f54c8a7a03bf5ac9[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Sun May 5 13:47:34 2019 +0000
+
+    basic login
+
+[33mcommit 55603cdad28fb23c16f2305a41a29b8f764f91f1[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Sun May 5 12:01:09 2019 +0000
+
+    use-SSL & Puma-Webserver in Production
+
+[33mcommit 545dadc33d487808c529d9e18cd50733938b0c97[m
+Merge: 4c258f2 898591a
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Sun May 5 09:13:15 2019 +0000
+
+    use-SSL & Puma-Webserver in Production
+
+[33mcommit 4c258f211347ef220cd1706d0e6ac7bfe33dc3c3[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Sun May 5 09:08:18 2019 +0000
+
+    Finish users-signup
+
+[33mcommit 9e768c7fe6a1cc1a8d99bf63aedf426ad38ed1f6[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Sun May 5 07:05:17 2019 +0000
+
+    Finish layout
+
+[33mcommit 898591a50fb2b2df7c8869f43772ed7fde0c1178[m[33m ([m[1;32muser-signup[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Sun May 5 05:39:09 2019 +0000
+
+    Make a basic User model
+
+[33mcommit 90082d54aa577cc72c8e0f3c431f1f9d72b6dd72[m[33m ([m[1;32mmodeling-users[m[33m, [m[1;32mlogin-function[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Thu May 2 13:11:48 2019 +0000
+
+    Make a basic User model
+
+[33mcommit a67805e06e3bbc2c879c70429abefcb00d797349[m[33m ([m[1;32mpage-layout[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Tue Apr 30 14:33:58 2019 +0000
+
+    Finish layout
+
+[33mcommit 839a7a120f37ba6ee074725074359dd3e6259fe8[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Tue Apr 30 13:19:21 2019 +0000
+
+    Init repository
+
+[33mcommit 290c171b742eda3d14c4beb6f2195a927e0cf1a2[m[33m ([m[1;32mstatic-pages[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Tue Apr 30 10:24:48 2019 +0000
+
+    Finish static page
+
+[33mcommit 7cf8f78ce7d0e52ecbdd1ce25b449db1d2d84c06[m[33m ([m[1;31morigin/static-pages[m[33m)[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Tue Apr 30 10:01:24 2019 +0000
+
+    Add a Static Pages controller
+
+[33mcommit 421c77e2351c9d97ede5e011f83fe68bc15b905c[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Tue Apr 30 06:38:14 2019 +0000
+
+    Add hello action
+
+[33mcommit 8f9dbe5cab2286a9733b8d4633f03a37dc907607[m
+Author: akimoto <kurikiton.max@gmail.com>
+Date:   Tue Apr 30 05:37:33 2019 +0000
+
+    Init repository

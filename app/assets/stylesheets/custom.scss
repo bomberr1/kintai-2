@@ -144,12 +144,12 @@ input, textarea, select, .uneditable-input {
 }
 
 .text-primary{
-  color: #F00;
+  color: blue;
 }
 
 
 .text-danger{
-  color: blue;
+  color: red;
 }
 
 .navbar-nav{
@@ -174,4 +174,17 @@ box-sizing: border-box;
 
 .readonly {
   background-color: #EEEEEE;
+}
+
+.btn-search{
+width: 50px;
+position: relative;
+  left: 200px;
+
+}
+
+.index_tag{
+  width: 200px;
+ position: relative;
+  bottom: 34px;
 }
